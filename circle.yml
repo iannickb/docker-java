@@ -6,6 +6,10 @@ dependencies:
   override:
     - docker build -t iannickb/java .
 
+test:
+  override:
+    - docker run -d iannickb/java
+
 deployment:
   hub:
     branch: master
